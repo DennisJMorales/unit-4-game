@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Crystal Collector</h1>
+    </div>
+    <div class="instructions">
+        <h3>instructions</h3>
+        <p>Your will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your
+            total
+            score.</p>
+        <p>You win the game by matching your total score to random number, you lose the game if your total score goes
+            above
+            the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+        </br>
+
+    </div>
+    <!-- this is where the random number shows up -->
+    <div class="numberToMatch">
+        <h2><span id="randomNumber"></span></h2>
+    </div>
+    <div class="winsAndLosses">
+        <h2>Wins:
+            <span id="numberWins"></span>
+            </br>
+            Losses:
+            <span id="numberLosses"></span>
+        </h2>
+    </div>
+    <div class="gems">
+        <img src="assets/images/large-1.png" class=gemImage id="one" alt="krystal1">
+        <img src="assets/images/large-2.png" class=gemImage id="two" alt="krystal2">
+        <img src="assets/images/large-3.png" class=gemImage id="three" alt="krystal3">
+        <img src="assets/images/large4.png" class=gemImage id="four" alt="krystal4">
+    </div>
+    <div class="userTotal">
+        <h2>Your total score is:
+            <span id="finalTotal"></span>
+        </h2>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+
+<!--  //Trying to something fancy but some how couldnt finish it//  -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+    <script src=" assets/javascript/game.js"></script>
+
+    <script>
+        $(function () {
+
+            $(.instructions).fadeOut(1000).delay(1000).slideDown(1000)
+
+        });
+
+
+
+
+    </script>
+
+</body>
+
+</html>
